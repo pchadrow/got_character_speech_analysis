@@ -46,12 +46,28 @@ Another thing to keep in mind is that this analysis is based upon a pre-trained 
 
 ![debatable sentiment](./Images/sentiment_example.png)
 
-
-
+I personally think it's somewhat debatable as to if this is actually a mostly positive sentiment.
 </details>
 
 ## Modeling
 <details><summary></summary>
+Our initial goal was to attempt to classify which character is speaking. To start I created a language model based upon the ULMFiT method using the all of the available dialogue. What I then tried was to separate out Season 8 and train our model upon the remaining 7 seasons. From here I would have to then reduce our characters to only those that survived all the way to Season 8. Further filtering to only characters that had at least 300 lines to train with, reduced our classes from over 500 to 16.
+The character classifier wasn't the best, achieving just shy of 25% overall accuracy.
+
+![confusion matrix](./Images/character_matrix.png)
+
+It did seem that Lannisters and Starks had higher probability of accuracte classification which would lead to my next modeling attempt at classifying dialogue by family.
+
+___________________
+Classifying by family did provide a signiciant improvement to 50% overall accuracy.
+
+![confusion matrix](./Images/snow_to_stark.png)
+
+An interesting takeaway from this plot is the likelihood of classification for both Greyjoys and Tarlys. Both of these key characters spent close aproximation with the Starks and both have significantly higher probabilites of being misclassified as a Stark as opposed to any other family.
+__________
+Finally, we'll look at only classifying Starks and Lannisters. Further reducing our classes to a binary problem provides us with an overall accuracy of around 68%.
+
+![confusion matrix](./Images/LS_matrix.png)
 
 </details>
 
