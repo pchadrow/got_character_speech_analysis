@@ -2,10 +2,10 @@
 
 <details><summary>Presentables</summary>
 
-[Presentation (no link yet)]()
-[Presentation Video (no link yet)]()
-[Relevant Blog(no link yet)]()
-[Interactive App](https://got-character-lines-plot.herokuapp.com/)
+* [Presentation (no link yet)]()
+* [Presentation Video (no link yet)]()
+* [Relevant Blog(no link yet)]()
+* [Interactive App](https://got-character-lines-plot.herokuapp.com/)
 </details>
 
 ## Purpose
