@@ -73,5 +73,5 @@ Finally, we'll look at only classifying Starks and Lannisters. Further reducing 
 
 ## Conclusion
 <details><summary></summary>
-
+Individual character classification proved to be a more complex problem than initially thought. Primarily due to the amount of data needed in order to be able to accurately classify a character and realisticly only having data to properly identify maybe 2 of the over 500 unique characters in the show. Attempting classification by house and last name did provide better results and does leave some room for improvement as this will most likely be the best method of speech classification. In terms of our sentiment analysis, it does seem to be somewhat believable in its results. However, a healthy amount of skepticism should be used as it was obtained via a pre-trained model and unable to be retrained on the data in its current state without manually classifying script dialogue sentiment myself. As a fan of the show, Tyrion was always an enjoyable character. After this investigation though, it surprises me how heavily he was relied upon to carry the series. While assuming he'd have a significant percentage of the dialogue, I was surpsised at just how much in numerous instances. 
 </details>
