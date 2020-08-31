@@ -21,6 +21,32 @@ Looking into dialogue line distribution and number of words per line it became v
 
 ## Analysis
 <details><summary></summary>
+Initial overview of the data found that there were some inconsistencies with the naming of several characters. Diving deeper into our list of unique characters the following were found to be corrected.
+
+![img of dict](./Images/dict.png)
+
+Fixing these names reduced our total number of unique characters from 564 to 520. From here, I began work on an interactive dashboard to allow for easier insight to individual seasons, episodes, and even characters. The Dashapp folder holders the scratch notebook used to test and verify the app. The app repo itself is located [here](https://github.com/pchadrow/got_character_app) and the interactive app can be veiwed and tested [here](https://got-character-lines-plot.herokuapp.com/).
+______________________________
+Through the app it became apparent quite quickly that the show seemed to hinge upon Tyrion Lannister. This started early on in the show and with the exception of Season 7, he maintained the most spoken character. Especially so in the final episode where he accounted for over 40% of all spoken words. Interestingly enough, while he did tend to have the most lines and most words, the privilege of longest monologue went to Talisa in Season 2 Episode 8. 
+
+### Sentiment
+
+Using nltk's Vader sentiment, we then looked into analyzing character sentiment.
+Looking at our top characters average overall sentiment was interesting.
+
+![overall average sentiment](./Images/sentiment_avgs.png)
+
+Sentiment aside, we saw that some characters, on average, had much more to say when they did speak than others. Both Varys and Petyr Baelish seemed average more words than anyone else when they spoke, and they also seemed to average more positive words than others when they spoke too. This is based off of the average compound score, where 1 is extremely positive, and -1 is extremely negative. While everyone seems to average out very close to neutral, the two of them had the highest avg score indiciating more positive dialogue overall. As for negativity, it seems that Sandor Clegane is our most negative character. What was also interesting was that Tywin Lannister appears to be almost perfectly neutral through the sentiment analysis. Broken down by season, we can also see some trends to comfirm some of this.
+
+![sentiment heat map](./Images/sentiment_heat.png)
+
+Note that the empty spaces indicate the character was not present that season, most likely due to being killed off. 
+
+Another thing to keep in mind is that this analysis is based upon a pre-trained sentiment model. I feel this may be in the ballpark, but still have reservations upon it's accuracy based on specific examples like below.
+
+![debatable sentiment](./Images/sentiment_example.png)
+
+
 
 </details>
 
