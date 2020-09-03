@@ -2,9 +2,9 @@
 
 <details><summary>Presentables</summary>
 
-* [Presentation (no link yet)]()
-* [Presentation Video (no link yet)]()
-* [Relevant Blog(no link yet)]()
+* [Presentation](./Images/GoT_Investigation.pdf)
+* [Presentation Video](https://www.youtube.com/watch?v=YBQkv0wEMZ0&feature=youtu.be)
+* [Relevant Blog](https://medium.com/@pchadrow/an-investigation-into-the-dialogue-of-the-game-of-thrones-series-a7a828a64360)
 * [Interactive App](https://got-character-lines-plot.herokuapp.com/)
 </details>
 
